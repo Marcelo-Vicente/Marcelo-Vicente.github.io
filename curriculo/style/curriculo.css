@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins' , 'sans-serif';
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: black;
+}
+
+.comeco-barra a{
+    display: inline-block;
+    font-size: 25px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    animation: slidetop .3s ease forwards;
+   
+    
+}
+
+.comeco-barra a:hover{
+    color: #340a46;
+}
+
+.apresentacao {
+    
+    position: relative;
+    width: 100%;
+    background: url(img1.png)no-repeat;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.sobre{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1,5rem;
+}
+
+.sobre-img img{
+    display: grid;
+    padding-bottom: 10%;
+    max-width: 930px;
+    height: auto;
+    width: 1100%;
+    border-radius: 8px;
+}
+
+.sobre-text{
+    font-size: 20px;
+    line-height: 1,4;
+    margin-bottom: 4rem;
+}
+
+.sobre-text h2{
+    color: #340a46;
+}
+
+.servicos-lista{
+color: aliceblue;
+font-size: 20px;
+line-height: 1,4;
+margin-bottom: 4rem;
+}
+
+.sub-titulo{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.sub-titulo span{
+    color: #340a46;
+}
+
+.caixa{
+    padding: 90px;
+}
+
+.servicos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.servicos-lista div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 1px 1px 20px #340a46,
+                1px 1px 40px #340a46
+}
+
+.servicos-lista div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.servicos-lista div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+ 
+.servicos-lista div a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.read {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ad1414;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #ffffff, 
+    0 0 25px #ffffff;
+}
+
+.read:hover {
+    background: #340a46;
+    color: #ffffff;
+    box-shadow: 0 0 5px #ffffff,
+    0 0 25px #ffffff, 0 0 50px #ffffff,
+    0 0 100px #ffffff, 0 0 200px #ffffff;
+}
+
+.servicos-lista div:hover {
+    transform: translateY(-10px);
+}
+
+.texto-principal {
+    padding-top: 130px;
+    margin-top: 10px;
+}
+
+.texto-principal h2{
+    font-size: 60px;
+    line-height: 3;
+    text-align: center;
+}
+
+.texto-principal h2 span {
+    color: #340a46;
+}
+
+.Portifolio-conteudo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+}
+
+.linha {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;   
+}
+
+.linha img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+    
+}
+
+.texto-principal img {
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 52px;  
+}
+
+.contato1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    margin-left: 500px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.contato-text h2 {
+    font-size: 90px;
+    line-height: 2;
+    text-align: center;
+    
+    
+}
+
+.contato-text h2 span{
+    color: #340a46;
+    
+}
+
+.contato-lista {
+    margin-bottom: 5rem;
+}
+
+.contato-lista li{
+    margin-bottom: 20px;
+    display: block;
+    font-size: 31px;
+}
+
+.contato-lista li{
+    margin-bottom: 25px;
+    display: block;
+}
+
+.contato-lista i{
+    text-align: center;
+    display: inline-block;
+    color: #340a46;
+    font-size: 42px;
+    font-weight: 200;
+    transition: all .40s ease;
+}
+
+.contato-lista li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #ffffff;
+}
+
+.icones-contato i{
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 3px solid #340a46;
+    border-radius: 20px;
+    color: #340a46;
+    text-decoration: none;
+    margin: 1px 15px 30px 0;
+    transition: .5s ease;
+    animation: slideleft 1s ease forwards;
+    animation: calc(.3s * var(--1));
+}
+
+
+.icones-contato i:hover {
+    margin-left: 10px;
+    background: #340a46;
+    color: #f9f9f9;
+    box-shadow: 0 0 30px #955aaf;
+}
+
+.final {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(#340a46, #000000, #340a46);
+    font-weight: 300;
+    margin-top: 70px;
+}
+
+.top {
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+
+.top i {
+    color: #000000;
+    background: #340a46;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+.apresentacao-inicio {
+    max-width: 600px;
+}
+
+.apresentacao-inicio h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.apresentacao-inicio h1 span{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.apresentacao-inicio p {
+    font-size: 28px;
+    
+}
+
+.contato{
+    font-size: 56px;
+    font-weight: 700;
+    margin:  15px 5px 0;
+    
+    
+}
+
+.img {
+
+    width: 250px;
+}
+
